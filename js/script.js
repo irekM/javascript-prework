@@ -1,15 +1,8 @@
 
-var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors, argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
-
-buttonTest = document.getElementById('button-test');
-
+let argButtonName, buttonRock, buttonPaper, buttonScissors, argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 buttonRock = document.getElementById('button-rock');
-
-
 buttonPaper = document.getElementById('button-paper');
-
-
 buttonScissors = document.getElementById('button-scissors');
 
 
@@ -65,7 +58,6 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
